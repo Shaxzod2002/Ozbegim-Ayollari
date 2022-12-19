@@ -15,9 +15,7 @@ const SignUp = () => {
             Ro'yhatdan o'tish
           </h2>
           <div className="form-group w-[90%] flex flex-col gap-2">
-            <label htmlFor="username" className="text-xl text-[#EEA73D]">
-              Ism Familiyangizni kiriting
-            </label>
+            <label htmlFor="username" className="text-xl text-[#EEA73D]">Ism Familiyangizni kiriting</label>
             <TextField
               type="text"
               id="username"
@@ -30,9 +28,7 @@ const SignUp = () => {
             />
           </div>
           <div className="form-group w-[90%] flex flex-col gap-2">
-            <label htmlFor="email" className="text-xl text-[#EEA73D]">
-              Elektron pochtangizni kiriting
-            </label>
+            <label htmlFor="email" className="text-xl text-[#EEA73D]">Elektron pochtangizni kiriting</label>
             <TextField
               type="email"
               id="email"
@@ -45,9 +41,7 @@ const SignUp = () => {
             />
           </div>
           <div className="form-group w-[90%] flex flex-col gap-2">
-            <label htmlFor="email" className="text-xl text-[#EEA73D]">
-              Elektron pochtangizni kiriting
-            </label>
+            <label htmlFor="email" className="text-xl text-[#EEA73D]">Elektron pochtangizni kiriting</label>
             <TextField
               type="password"
               id="password"

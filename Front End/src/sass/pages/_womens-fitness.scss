@@ -1,0 +1,16 @@
+.womens-fitness {
+  header {
+    width: 100%;
+    min-height: 100vh;
+    background: url("../images/womens fitnes/bg.jpg") no-repeat center;
+    background-size: cover;
+    .bg-theme {
+      width: 100%;
+      min-height: 100vh;
+      background-color: #000000a0;
+      h1 {
+        font-family: "PT Serif", serif;
+      }
+    }
+  }
+}

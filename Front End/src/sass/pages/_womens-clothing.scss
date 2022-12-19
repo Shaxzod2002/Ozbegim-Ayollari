@@ -1,0 +1,16 @@
+.womens-clothing {
+  header {
+    width: 100%;
+    min-height: 120vh;
+    background: url("../images/womens clothing/bg.avif") no-repeat center;
+    background-size: cover;
+    .bg-theme {
+      width: 100%;
+      min-height: 120vh;
+      background-color: #000000a0;
+      h1 {
+        font-family: "PT Serif", serif;
+      }
+    }
+  }
+}
