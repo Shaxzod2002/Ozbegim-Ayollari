@@ -24,3 +24,9 @@ class HuquqSerializer(ModelSerializer):
     class Meta:
         model = Huquq
         fields = '__all__'
+
+
+class TibbiySerializer(ModelSerializer):
+    class Meta:
+        model = Tibbiy
+        fields = '__all__'
