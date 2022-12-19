@@ -8,9 +8,7 @@ const WomensRights = () => {
 
   useEffect(() => {
     const getPages = async () => {
-      const response = await axios.get(
-        "http://http://uzbek-women-backend.netlify.app/huquqlar/"
-      );
+      const response = await axios.get("http://127.0.0.1:8000/huquqlar/");
       setPages(response.data);
     };
     getPages();

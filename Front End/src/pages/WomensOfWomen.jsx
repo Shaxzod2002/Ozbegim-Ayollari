@@ -8,9 +8,7 @@ const WomensOfWomen = () => {
 
   useEffect(() => {
     const getPages = async () => {
-      const res = await axios.get(
-        "http://uzbek-women-backend.netlify.app/psixlar/"
-      );
+      const res = await axios.get("http://127.0.0.1:8000/psixlar/");
       setPages(res.data);
     };
     getPages();
