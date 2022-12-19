@@ -33,6 +33,8 @@ urlpatterns = [
     path('users/', UsersAPIView.as_view()),
     path('tibbiy-muammolar/', TibbiyMuammolarAPIView.as_view()),
     path('tibbiy/<int:pk>/', TibbiyAPIView.as_view()),
+    path('hordiqlar/', HordiqlarAPIView.as_view()),
+    path('hordiq/<int:pk>/', HordiqAPIView.as_view()),
     path('get_token/', obtain_auth_token),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0)),
 

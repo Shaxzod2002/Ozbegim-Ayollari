@@ -36,3 +36,8 @@ class TibbiySerializer(ModelSerializer):
     class Meta:
         model = Tibbiy
         fields = '__all__'
+
+class HordiqSerializer(ModelSerializer):
+    class Meta:
+        model = Hordiq
+        fields = '__all__'

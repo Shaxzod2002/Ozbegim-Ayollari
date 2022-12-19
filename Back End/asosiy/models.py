@@ -46,4 +46,11 @@ class Tibbiy(models.Model):
     title = models.CharField(max_length=50)
     text = models.TextField()
     def __str__(self): return self.title
+
+class Hordiq(models.Model):
+    nom=models.CharField(max_length=50)
+    link=models.CharField(max_length=200)
+    text=models.TextField()
+    def __str__(self): return self.nom
+
     

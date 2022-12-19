@@ -110,3 +110,16 @@ class TibbiyMuammolarAPIView(APIView):
         bolimlar = Tibbiy.objects.all()
         ser = TibbiySerializer(bolimlar, many=True)
         return Response(ser.data)
+
+class HordiqAPIView(APIView):
+    def get(self, request, pk):
+        bolim = Hordiq.objects.get(id=pk)
+        ser = HordiqSerializer(bolim)
+        return Response(ser.data)
+
+
+class HordiqlarAPIView(APIView):
+    def get(self, request):
+        bolimlar = Hordiq.objects.all()
+        ser = HordiqSerializer(bolimlar, many=True)
+        return Response(ser.data)
