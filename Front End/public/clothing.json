@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "title": "8sekundli gul suyagi qatlamli ko'ylak",
+    "sum": "77,40$",
+    "image": "./images/Women Clothing/1.jpg"
+  },
+  {
+    "id": "2",
+    "title": "O'rta uzunlikdagi peluş sviterli KAC bo'shashgan bel ko'ylagi - xom oq va oq",
+    "sum": "11,90$",
+    "image": "./images/Women Clothing/2.jpg"
+  },
+  {
+    "id": "3",
+    "title": "O'rta uzunlikdagi peluş sviterli KAC bo'sh bel ko'ylagi - qora",
+    "sum": "11,90$",
+    "image": "./images/Women Clothing/3.jpg"
+  },
+  {
+    "id": "4",
+    "title": "8sekundli ko'ylak pilili mini ko'ylak Qora",
+    "sum": "77,40$",
+    "image": "./images/Women Clothing/4.jpg"
+  },
+  {
+    "id": "5",
+    "title": "8 soniyali qatlamli jinsi libos qora",
+    "sum": "91,80$",
+    "image": "./images/Women Clothing/5.jpg"
+  },
+  {
+    "id": "6",
+    "title": "KAC Ayollar kostyumi ko'ylagi Bel Slim Professional Swing O'rta uzunlikdagi",
+    "sum": "60.77$",
+    "image": "./images/Women Clothing/6.jpg"
+  },
+  {
+    "id": "7",
+    "title": "Choper yelkasiga o'ralgan ko'ylak",
+    "sum": "39.99$",
+    "image": "./images/Women Clothing/7.jpg"
+  },
+  {
+    "id": "8",
+    "title": "MOON Duo uzun trikotaj ko'ylak",
+    "sum": "61,99$",
+    "image": "./images/Women Clothing/8.jpg"
+  }
+]

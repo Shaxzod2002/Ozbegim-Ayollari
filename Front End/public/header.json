@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "image": "./images/header/1.jpg",
+    "title": "Ayollar Huquqi",
+    "paragraph": "Ayollar Huquqi - Ayollarning ijtimoiy-iqtisodiy, fuqarolik va siyosiy mavqeyini mustahkamlaydigan huquqlardir. Ular ayollarni jinsga qarab kamsitishlardan himoya qilish uchun mo‘ljallangan.",
+    "link": "Ko'proq Ko'rish",
+    "url": "womens-rights"
+  },
+  {
+    "id": "2",
+    "image": "./images/header/2.jpg",
+    "title": "Ayollar Psixologiyasi",
+    "paragraph": "Ayollarning psixologiyasi - ko'pincha erkaklar uchun sir bo'lib qoladi. Bu biologik va psixologik farqlarga asoslanadi. Ayollar va erkaklar har xil fikrlash, xatti-harakatlar va muloqot uslubiga ega. Shu sababli, munosabatlarda juda ko'p kelishmovchiliklar paydo bo'ladi.",
+    "link": "Ko'proq Ko'rish",
+    "url": "womens-of-women"
+  },
+  {
+    "id": "3",
+    "image": "./images/header/3.png",
+    "title": "Tibbiy Muammolarga yechimlar",
+    "paragraph": "Agar siz qalqonsimon bez bilan bog'liq muammolarga duch kelsangiz, shifokoringiz qalqonsimon bezning mumkin bo'lgan buzilishlarini aniqlash uchun ultratovush tekshiruvini o'tkazishi mumkin...",
+    "link": "Ko'proq Ko'rish",
+    "url": "solutions-to-medical-problems"
+  },
+  {
+    "id": "4",
+    "image": "./images/header/4.jpg",
+    "title": "Ayollar Fitnesi",
+    "paragraph": "Sog'ligingiz va fitnesingizni nazorat qilish chekishni tashlaganingizdan keyin qila oladigan eng kuchli narsalardan biridir. Ammo siz qanchalik g'ayratli bo'lishingizdan qat'i nazar, birinchi marta sport zaliga qadam qo'yish qo'rqinchli tajriba bo'lishi mumkin. Darhaqiqat, ba'zi odamlar ketishdan oldin butunlay to'xtab qolishlari odatiy hol emas...",
+    "link": "Ko'proq Ko'rish",
+    "url": "womens-fitness"
+  },
+  {
+    "id": "5",
+    "image": "./images/header/5.jpg",
+    "title": "Ayollar Kiyimlari",
+    "paragraph": "Sugarlandiyadagi ayollar endi tabassumiga shirin uslub bilan hamroh bo'lishlari mumkin...",
+    "link": "Ko'proq Ko'rish",
+    "url": "womens-clothing"
+  },
+  {
+    "id": "6",
+    "image": "./images/header/6.jpg",
+    "title": "Ayollar Uchun Madaniy Hordiq",
+    "paragraph": "Halqa (SevimliPlay) Turk Serial 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 qismlar Uzbek tilida...",
+    "link": "Ko'proq Ko'rish",
+    "url": "cultural-entertainment-for-women"
+  }
+]
