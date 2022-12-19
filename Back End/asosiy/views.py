@@ -66,6 +66,26 @@ class PsixAPIView(APIView):
 
 class HuquqAPIView(APIView):
     def get(self, request, pk):
+        bolim=Huquq.objects.get(id=pk)
+        ser=HuquqSerializer(bolim)
+        return Response(ser.data)
+
+class UsersAPIView(APIView):
+    def get(self, request):
+        ser=UserSerializer(User.objects.all(), many=True)
+        return Response(ser.data)
+    def post(self, request):
+        ser=UserSerializer(data=request.data)
+        if ser.is_valid():
+            ser.save()
+            return Response(ser.data)
+        return Response(ser.errors)
+
+# class UserAPIView(APIView):
+#     def post(self, request):
+#         data=request.data
+#         if data.username
+
         bolim = Tibbiy.objects.get(id=pk)
         ser = HuquqSerializer(bolim)
         return Response(ser.data)
@@ -89,4 +109,17 @@ class TibbiyMuammolarAPIView(APIView):
     def get(self, request):
         bolimlar = Tibbiy.objects.all()
         ser = TibbiySerializer(bolimlar, many=True)
+        return Response(ser.data)
+
+class HordiqAPIView(APIView):
+    def get(self, request, pk):
+        bolim = Hordiq.objects.get(id=pk)
+        ser = HordiqSerializer(bolim)
+        return Response(ser.data)
+
+
+class HordiqlarAPIView(APIView):
+    def get(self, request):
+        bolimlar = Hordiq.objects.all()
+        ser = HordiqSerializer(bolimlar, many=True)
         return Response(ser.data)

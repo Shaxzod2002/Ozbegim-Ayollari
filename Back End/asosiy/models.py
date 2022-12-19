@@ -1,13 +1,6 @@
 from django.contrib.auth.models import User
 from django.db import models
 
-class Profil(models.Model):
-    ism = models.CharField(max_length=40)
-    parol = models.CharField(max_length=25)
-    nomer = models.CharField(max_length=13)
-    def __str__(self): return self.ism
-
-
 class Konstitsiya_Bolim(models.Model):
     raqam = models.PositiveSmallIntegerField()
     nom = models.CharField(max_length=100)
@@ -53,4 +46,11 @@ class Tibbiy(models.Model):
     title = models.CharField(max_length=50)
     text = models.TextField()
     def __str__(self): return self.title
+
+class Hordiq(models.Model):
+    nom=models.CharField(max_length=50)
+    link=models.CharField(max_length=200)
+    text=models.TextField()
+    def __str__(self): return self.nom
+
     
