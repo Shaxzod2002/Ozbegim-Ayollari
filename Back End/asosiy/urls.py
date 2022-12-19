@@ -26,6 +26,8 @@ urlpatterns = [
     path('bob/<int:pk>/', Konstitsiya_BobAPIView.as_view()),
     path('moddalar/', Konstitsiya_ModdalarAPIView.as_view()),
     path('modda/<int:pk>/', Konstitsiya_ModdaAPIView.as_view()),
+    path('psixlar/', PsixlarAPIView.as_view()),
+    path('psix/<int:pk>/', PsixAPIView.as_view()),
     path('get_token/', obtain_auth_token),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0)),
 

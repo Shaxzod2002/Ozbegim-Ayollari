@@ -50,3 +50,15 @@ class Konstitsiya_ModdaAPIView(APIView):
         bolim = Konstitsiya_Modda.objects.get(id=pk)
         ser = ModdaSerializer(bolim)
         return Response(ser.data)
+    
+class PsixlarAPIView(APIView):
+    def get(self, request):
+        bolimlar=Psix.objects.all()
+        ser=PsixSerializer(bolimlar, many=True)
+        return Response(ser.data)
+
+class PsixAPIView(APIView):
+    def get(self, request, pk):
+        bolim=Psix.objects.get(id=pk)
+        ser=PsixSerializer(bolim)
+        return Response(ser.data)

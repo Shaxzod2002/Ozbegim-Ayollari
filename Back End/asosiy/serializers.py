@@ -15,3 +15,8 @@ class ModdaSerializer(ModelSerializer):
         model = Konstitsiya_Modda
         fields = '__all__'
 
+class PsixSerializer(ModelSerializer):
+    class Meta:
+        model = Psix
+        fields = '__all__'
+

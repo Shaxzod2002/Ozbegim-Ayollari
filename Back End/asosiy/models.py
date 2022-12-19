@@ -39,3 +39,8 @@ class Izohlar_Site_Bolim(models.Model):
     vaqti = models.DateField(auto_now_add=True)
     def __str__(self): return self.izoh
 
+class Psix(models.Model):
+    title=models.CharField(max_length=50)
+    text=models.TextField()
+    def __str__(self): return self.title
+    
