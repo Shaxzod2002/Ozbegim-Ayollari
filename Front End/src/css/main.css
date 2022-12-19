@@ -77,3 +77,19 @@
 .solutions-to-medical-problems header .bg-theme h1 {
   font-family: "PT Serif", serif;
 }
+
+.cultural-entertainment-for-women header {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../images/cultural entertainment for women/bg.jpg") no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.cultural-entertainment-for-women header .bg-theme {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6274509804);
+}
+.cultural-entertainment-for-women header .bg-theme h1 {
+  font-family: "PT Serif", serif;
+}
