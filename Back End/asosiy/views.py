@@ -74,3 +74,20 @@ class HuquqAPIView(APIView):
         bolim=Huquq.objects.get(id=pk)
         ser=HuquqSerializer(bolim)
         return Response(ser.data)
+
+class UsersAPIView(APIView):
+    def get(self, request):
+        ser=UserSerializer(User.objects.all(), many=True)
+        return Response(ser.data)
+    def post(self, request):
+        ser=UserSerializer(data=request.data)
+        if ser.is_valid():
+            ser.save()
+            return Response(ser.data)
+        return Response(ser.errors)
+
+# class UserAPIView(APIView):
+#     def post(self, request):
+#         data=request.data
+#         if data.username
+

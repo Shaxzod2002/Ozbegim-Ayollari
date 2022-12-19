@@ -30,6 +30,7 @@ urlpatterns = [
     path('psix/<int:pk>/', PsixAPIView.as_view()),
     path('huquqlar/', HuquqlarAPIView.as_view()),
     path('huquq/<int:pk>/', HuquqAPIView.as_view()),
+    path('users/', UsersAPIView.as_view()),
     path('get_token/', obtain_auth_token),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0)),
 
