@@ -62,3 +62,15 @@ class PsixAPIView(APIView):
         bolim=Psix.objects.get(id=pk)
         ser=PsixSerializer(bolim)
         return Response(ser.data)
+
+class HuquqlarAPIView(APIView):
+    def get(self, request):
+        bolimlar=Huquq.objects.all()
+        ser=HuquqSerializer(bolimlar, many=True)
+        return Response(ser.data)
+
+class HuquqAPIView(APIView):
+    def get(self, request, pk):
+        bolim=Huquq.objects.get(id=pk)
+        ser=HuquqSerializer(bolim)
+        return Response(ser.data)
