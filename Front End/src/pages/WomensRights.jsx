@@ -32,9 +32,9 @@ const WomensRights = () => {
         </header>
         <div className="w-full min-h-[100vh] flex justify-center items-center flex-wrap gap-8 p-4">
           {pages.map((page) => (
-            <div className="shadow-lg shadow-[#EEA73D] rounded-lg w-[90%] p-8">
+            <div className="shadow-lg shadow-[#EEA73D] rounded-lg w-[90%] p-8 flex flex-col gap-3">
               <h1 className="text-[#EEA73D] text-3xl font-semibold">
-                Ayollar huquqlari
+                {page.title}
               </h1>
               <p className="text-xl text-white/80">{page.text}</p>
             </div>
