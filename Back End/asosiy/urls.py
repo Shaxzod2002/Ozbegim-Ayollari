@@ -28,6 +28,8 @@ urlpatterns = [
     path('modda/<int:pk>/', Konstitsiya_ModdaAPIView.as_view()),
     path('psixlar/', PsixlarAPIView.as_view()),
     path('psix/<int:pk>/', PsixAPIView.as_view()),
+    path('huquqlar/', HuquqlarAPIView.as_view()),
+    path('huquq/<int:pk>/', HuquqAPIView.as_view()),
     path('get_token/', obtain_auth_token),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0)),
 

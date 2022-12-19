@@ -20,3 +20,7 @@ class PsixSerializer(ModelSerializer):
         model = Psix
         fields = '__all__'
 
+class HuquqSerializer(ModelSerializer):
+    class Meta:
+        model = Huquq
+        fields = '__all__'
