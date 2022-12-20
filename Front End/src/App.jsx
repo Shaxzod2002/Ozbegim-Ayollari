@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Home from "./pages/Home";
 import WomensRights from "./pages/WomensRights";
 import { Route, Routes } from "react-router-dom";
@@ -11,7 +12,6 @@ import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import "./css/main.css";
 import { AuthContextProvider } from "./context/AuthContext";
-import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 

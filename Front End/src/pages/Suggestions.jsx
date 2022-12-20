@@ -8,7 +8,7 @@ const Suggestions = () => {
   const [userName, setUserName] = useState("");
   const [textarea, setTextarea] = useState("");
   const [user, setUser] = useState([]);
-  const userLoginRef = collection(db, "login");
+  const userLoginRef = collection(db, "comments");
   const createUser = async () => {
     await addDoc(userLoginRef, {
       userName,
@@ -24,7 +24,6 @@ const Suggestions = () => {
           id: doc.id,
         }))
       );
-      console.log(data);
     };
     getUser();
     if (!user) return null;
@@ -33,15 +32,19 @@ const Suggestions = () => {
   return (
     <div>
       <section className="w-full min-h-[100vh] flex-col gap-5 py-8 bg-black flex justify-center items-center">
-        {user.map((item) => (
-          <div
-            className=" bg-black text-white w-[400px] min-h-[100px] py-3 shadow-lg shadow-[#EEA73D] rounded-lg flex flex-col gap-2 p-2"
-            key={item.id}
-          >
-            <h2 className="text-3xl text-center">{item.textarea}</h2>
-            <p className="text-lg text-end">{item.userName}</p>
-          </div>
-        ))}
+        <div className="w-[90%] min-h-0 flex justify-around flex-wrap items-center gap-10 py-6">
+          {user.map((item, index) =>
+            index >= user.length - 10 ? (
+              <div
+                className=" bg-black text-white w-[400px] min-h-[100px] py-3 shadow-lg shadow-[#EEA73D] rounded-lg flex flex-col gap-2 p-2"
+                key={item.id}
+              >
+                <h2 className="text-3xl text-center">{item.textarea}</h2>
+                <p className="text-lg text-end">{item.userName}</p>
+              </div>
+            ) : null
+          )}
+        </div>
         <form className="w-[400px] min-h-[500px] shadow-lg shadow-[#EEA73D] rounded-lg flex justify-center items-center flex-col gap-4">
           <h2 className="text-[#EEA73D] text-3xl font-bold">
             Taklif Bildirish
@@ -68,8 +71,10 @@ const Suggestions = () => {
             color="warning"
             className="w-[90%] h-[50px]"
             onClick={() => {
-              createUser();
-              navigate("/");
+              if (userName && textarea) {
+                createUser();
+                navigate("/");
+              }
             }}
           >
             Yuborish

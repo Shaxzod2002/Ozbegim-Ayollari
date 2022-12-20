@@ -11,7 +11,6 @@ const Login = ({ setIsAuth }) => {
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
     setError("");
     try {
       await logIn(email, password);
@@ -25,7 +24,13 @@ const Login = ({ setIsAuth }) => {
     <div>
       <section className="w-full min-h-[calc(100vh-80px)] bg-black flex justify-center items-center">
         <form
-          onClick={handleSubmit}
+          method="post"
+          onClick={(e) => {
+            e.preventDefault();
+            if (email && password) {
+              handleSubmit();
+            }
+          }}
           className="w-[450px] max-w-[90%] min-h-[500px] shadow-lg shadow-[#EEA73D] rounded-lg flex justify-center items-center flex-col gap-4 py-6"
         >
           <h2 className="text-[#EEA73D] text-3xl font-bold">Tizimga kirish</h2>
