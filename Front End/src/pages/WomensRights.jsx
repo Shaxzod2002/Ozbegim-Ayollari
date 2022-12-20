@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 import axios from "axios";
 
 const WomensRights = () => {
@@ -15,7 +13,6 @@ const WomensRights = () => {
   }, []);
   return (
     <div>
-      <Navbar />
       <section className="womens-rights w-full min-h-[100vh] bg-black flex justify-between items-center flex-wrap gap-3 p-3 flex-col">
         <header>
           <div className="bg-theme">
@@ -41,7 +38,6 @@ const WomensRights = () => {
           ))}
         </div>
       </section>
-      <Footer />
     </div>
   );
 };

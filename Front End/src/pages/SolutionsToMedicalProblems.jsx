@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 import axios from "axios";
 
 const SolutionsToMedicalProblems = () => {
@@ -18,7 +16,6 @@ const SolutionsToMedicalProblems = () => {
   if (!pages) return null;
   return (
     <div>
-      <Navbar />
       <section className="solutions-to-medical-problems w-full min-h-[100vh] bg-black">
         <header>
           <div className="bg-theme">
@@ -47,7 +44,6 @@ const SolutionsToMedicalProblems = () => {
           ))}
         </div>
       </section>
-      <Footer />
     </div>
   );
 };

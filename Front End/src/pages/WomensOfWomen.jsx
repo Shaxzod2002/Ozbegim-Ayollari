@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 import axios from "axios";
 
 const WomensOfWomen = () => {
@@ -16,7 +14,6 @@ const WomensOfWomen = () => {
   if (!pages) return null;
   return (
     <div>
-      <Navbar />
       <section className="womens-of-women w-full min-h-[100vh] bg-black">
         <header>
           <div className="bg-theme">
@@ -46,7 +43,6 @@ const WomensOfWomen = () => {
           ))}
         </div>
       </section>
-      <Footer />
     </div>
   );
 };

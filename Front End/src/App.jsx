@@ -10,10 +10,17 @@ import Suggestions from "./pages/Suggestions";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import "./css/main.css";
+import { AuthContextProvider } from "./context/AuthContext";
+import { useState } from "react";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
+  const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
+  console.log(isAuth);
   return (
-    <>
+    <AuthContextProvider>
+      <Navbar isAuth={isAuth} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/womens-rights" element={<WomensRights />} />
@@ -29,10 +36,11 @@ function App() {
           element={<CulturalEntertainmentForWomen />}
         />
         <Route path="/suggestions" element={<Suggestions />} />
-        <Route path="/signin" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
+        <Route path="/signin" element={<Login setIsAuth={setIsAuth} />} />
+        <Route path="/signup" element={<SignUp setIsAuth={setIsAuth} />} />
       </Routes>
-    </>
+      <Footer />
+    </AuthContextProvider>
   );
 }
 

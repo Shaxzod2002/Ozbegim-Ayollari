@@ -1,7 +1,5 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 
 const CulturalEntertainmentForWomen = () => {
   const [pages, setPages] = useState();
@@ -16,7 +14,6 @@ const CulturalEntertainmentForWomen = () => {
   if (!pages) return null;
   return (
     <div>
-      <Navbar />
       <section className="cultural-entertainment-for-women w-full min-h-[100vh] bg-black">
         <header>
           <div className="bg-theme">
@@ -52,7 +49,6 @@ const CulturalEntertainmentForWomen = () => {
           ))}
         </div>
       </section>
-      <Footer />
     </div>
   );
 };
