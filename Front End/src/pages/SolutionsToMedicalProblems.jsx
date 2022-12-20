@@ -33,6 +33,9 @@ const SolutionsToMedicalProblems = () => {
           </div>
         </header>
         <div className="w-full min-h-[100vh] flex justify-center items-center flex-wrap gap-8 p-8">
+          <h2 className="text-2xl text-[#EEA73D]">
+            Har bir ayol tushunishi kerak bo'lgan 9 ta sog'liq muammolari
+          </h2>
           {pages.map((page) => (
             <div
               key={page.id}

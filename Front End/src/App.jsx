@@ -11,13 +11,13 @@ import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import "./css/main.css";
 import { AuthContextProvider } from "./context/AuthContext";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
-  console.log(isAuth);
+
   return (
     <AuthContextProvider>
       <Navbar isAuth={isAuth} />

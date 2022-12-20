@@ -2,15 +2,14 @@ import React from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContextProvider, UserAuth } from "../context/AuthContext";
 
-const Navbar = ({ isAuth, setIsAuth }) => {
+const Navbar = ({ isAuth }) => {
   const navigate = useNavigate();
-  const { user, logout } = UserAuth();
+  const { logOut, user } = UserAuth();
   const handleLogOut = async () => {
     try {
-      await logout();
+      await logOut();
       navigate("/");
-      localStorage.clear();
-      setIsAuth(false);
+      localStorage.setItem("isAuth", false);
     } catch (error) {
       console.error(error);
     }
@@ -72,7 +71,7 @@ const Navbar = ({ isAuth, setIsAuth }) => {
           </NavLink>
         </div>
         <div className="login flex items-center gap-3">
-          {isAuth ? (
+          {isAuth === "false" ? (
             <>
               <Link
                 className="duration-300 border border-[#EEA73D] text-2xl text-[#EEA73D] py-1 px-4 rounded-lg hover:bg-[#EEA73D] hover:text-[#000]"
@@ -87,14 +86,19 @@ const Navbar = ({ isAuth, setIsAuth }) => {
                 Ro'yxatdan o'tish
               </Link>
             </>
-          ) : (
-            <button
-              className="px-6 py-2 my-4 duration-300 hover:bg-red-600 hover:text-white bg-[#EEA73D] text-[#000] rounded-lg"
-              onClick={handleLogOut}
-            >
-              Logout
-            </button>
-          )}
+          ) : isAuth === "true" ? (
+            <>
+              <button
+                className="px-6 py-2 my-4 duration-300 hover:bg-red-600 hover:text-white bg-[#EEA73D] text-[#000] rounded-lg"
+                onClick={handleLogOut}
+              >
+                Log Out
+              </button>
+              <div>
+                <p className="text-white">{user && user.email}</p>
+              </div>
+            </>
+          ) : null}
         </div>
       </nav>
     </AuthContextProvider>
